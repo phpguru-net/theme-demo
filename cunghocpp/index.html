@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Theme Boilerplate 123</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/public/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/public/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/public/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/public/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/public/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/public/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+<link rel="manifest" href="/public/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="/public/css/fontawesome.css" rel="stylesheet" />
+    <link href="/public/css/brands.css" rel="stylesheet" />
+    <link href="/public/css/solid.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="style.css" />
+    <script src="/public/js/app.js" defer></script>
+</head>
+<body>
+    <div id="topbar" class="menu">
+    <!-- Navbar Container -->
+    <div class="container mx-auto flex items-center justify-between px-4">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="./" class="logo">
+          <i class="fa-solid fa-dharmachakra"></i>
+        </a>        
+        <!-- <img src="/path/to/logo.png" alt="Logo" class="h-8 w-auto"> -->
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="./" class="hover:text-gray-300 block px-2 py-4">Trang chủ</a></li>
+        <!-- Menu Item with Submenu -->
+        <li class="relative group">
+          <a href="#" class="hover:text-gray-300 block px-2 py-4">Bài viết</a>
+          <!-- Submenu -->
+          <ul class="absolute submenu left-0 top-full hidden group-hover:block -mt-2 rounded-lg shadow-md w-48">
+            <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Giáo lí</a></li>
+            <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Bàn luận</a></li>
+            <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Thực hành</a></li>
+            <!-- <li class="relative group">
+              <a href="#" class="block px-2 py-2 hover:bg-gray-100">Bàn luận</a>              
+              <ul class="absolute submenu left-full top-0 hidden group-hover:block mt-0 rounded-lg shadow-md w-48">
+                <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-1</a></li>
+                <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-2</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </li>
+        <!-- Menu Item with Submenu -->
+        <li class="relative group">
+            <a href="#" class="hover:text-gray-300 block px-2 py-4">Thư viện</a>
+            <!-- Submenu -->
+            <ul class="absolute submenu left-0 top-full hidden group-hover:block -mt-2 rounded-lg shadow-md w-48">
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Kinh</a></li>
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Truyện</a></li>
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Sách</a></li>
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Quote</a></li>
+              <!-- <li class="relative group">
+                <a href="#" class="block px-2 py-2 hover:bg-gray-100">Bàn luận</a>              
+                <ul class="absolute submenu left-full top-0 hidden group-hover:block mt-0 rounded-lg shadow-md w-48">
+                  <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-1</a></li>
+                  <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-2</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>        
+        <!-- Menu Item with Submenu -->
+        <li class="relative group">
+            <a href="#" class="hover:text-gray-300 block px-2 py-4">Media</a>
+            <!-- Submenu -->
+            <ul class="absolute submenu left-0 top-full hidden group-hover:block -mt-2 rounded-lg shadow-md w-48">
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Spotify</a></li>
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Youtube</a></li>
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Infographic</a></li>
+              <!-- <li class="relative group">
+                <a href="#" class="block px-2 py-2 hover:bg-gray-100">Bàn luận</a>              
+                <ul class="absolute submenu left-full top-0 hidden group-hover:block mt-0 rounded-lg shadow-md w-48">
+                  <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-1</a></li>
+                  <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-2</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>  
+        <!-- Menu Item with Submenu -->
+        <li class="relative group">
+            <a href="#" class="hover:text-gray-300 block px-2 py-4">About</a>
+            <!-- Submenu -->
+            <ul class="absolute submenu left-0 top-full hidden group-hover:block -mt-2 rounded-lg shadow-md w-48">
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Đội ngũ</a></li>
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Đăng ký tham gia</a></li>
+              <li><a href="#" class="block px-2 py-2 rounded-lg hover:bg-gray-100">Tài trợ</a></li>
+              <!-- <li class="relative group">
+                <a href="#" class="block px-2 py-2 hover:bg-gray-100">Bàn luận</a>              
+                <ul class="absolute submenu left-full top-0 hidden group-hover:block mt-0 rounded-lg shadow-md w-48">
+                  <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-1</a></li>
+                  <li><a href="#" class="block px-2 py-2 hover:bg-gray-100">Submenu 1-2-2</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>            
+      </ul>
+
+      <!-- Sign Up Button -->
+      <div class="hidden md:flex">
+        <a href="#" class="block text-center button-menu">Đăng ký thành viên</a>
+        <button id="open-theme-modal" class="bg-primary-color text-white px-4 py-2 rounded-lg hover:bg-primary-color-hover">
+          Change Theme Colors
+        </button>
+           
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="menu-toggle" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="topnav-mobile" class="hidden md:hidden bg-gray-900 fixed inset-0 z-50">
+        <!-- Sticky Top: Logo and Toggle -->
+        <div class="flex items-center justify-between px-4 py-3 bg-gray-800 sticky top-0 z-50">
+            <img src="/path/to/logo.png" alt="Logo" class="h-8 w-auto">
+            <button id="menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Scrollable Menu Content -->
+        <div id="topnav-menu" class="overflow-y-auto h-[calc(100%-120px)] px-4 py-4">
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="block text-white py-2 px-4">Trang chủ</a>
+                </li>
+                <!-- Menu Item with Submenu -->
+                <li>
+                    <a href="#" class="block text-white py-2 px-4 submenu-toggle">Bài viết</a>
+                    <ul class="submenu hidden space-y-2 mt-2 pl-4 border-l border-gray-700">
+                        <li><a href="#" class="block text-white py-2 px-4">Giáo lí</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Bàn luận</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Thực hành</a></li>
+                    </ul>
+                </li>
+                <!-- Menu Item with Submenu -->
+                <li>
+                    <a href="#" class="block text-white py-2 px-4 submenu-toggle">Thư viện</a>
+                    <ul class="submenu hidden space-y-2 mt-2 pl-4 border-l border-gray-700">
+                        <li><a href="#" class="block text-white py-2 px-4">Kinh</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Truyện</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Sách</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Quote</a></li>
+                    </ul>
+                </li>
+                <!-- Menu Item with Submenu -->
+                <li>
+                    <a href="#" class="block text-white py-2 px-4 submenu-toggle">Media</a>
+                    <ul class="submenu hidden space-y-2 mt-2 pl-4 border-l border-gray-700">
+                        <li><a href="#" class="block text-white py-2 px-4">Spotify</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Youtube</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Infographic</a></li>
+                    </ul>
+                </li>
+                <!-- Menu Item with Submenu -->
+                <li>
+                    <a href="#" class="block text-white py-2 px-4 submenu-toggle">About</a>
+                    <ul class="submenu hidden space-y-2 mt-2 pl-4 border-l border-gray-700">
+                        <li><a href="#" class="block text-white py-2 px-4">Đội ngũ</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Đăng ký tham gia</a></li>
+                        <li><a href="#" class="block text-white py-2 px-4">Tài trợ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- Sticky Bottom: Sign Up Button -->
+        <div class="bg-gray-800 px-4 py-3 sticky bottom-0">
+            <a href="#" class="block text-center button-menu py-2 px-4 rounded-lg text-white bg-primary-color hover:bg-primary-color-hover">
+                Đăng ký thành viên
+            </a>
+        </div>
+    </div>
+    
+    
+  </div>
+<main>
+
+  <section id="quotes-section" class="py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">Zen Quotes</h2>
+      <div id="quote-slider" class="relative h-24">
+        <!-- Quotes -->
+        <div class="quote active">
+          <p class="text-xl italic">"The journey of a thousand miles begins with a single step."</p>
+          <span class="block mt-2 text-lg font-medium">- Lao Tzu</span>
+        </div>
+        <div class="quote">
+          <p class="text-xl italic">"Peace comes from within. Do not seek it without."</p>
+          <span class="block mt-2 text-lg font-medium">- Buddha</span>
+        </div>
+        <div class="quote">
+          <p class="text-xl italic">"Happiness is not something ready-made. It comes from your own actions."</p>
+          <span class="block mt-2 text-lg font-medium">- Dalai Lama</span>
+        </div>
+        <div class="quote">
+          <p class="text-xl italic">"Be the change that you wish to see in the world."</p>
+          <span class="block mt-2 text-lg font-medium">- Mahatma Gandhi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="practice-section" class="py-10">
+  <div class="container mx-auto px-4 text-center">
+    <!-- Title -->
+    <h2 class="text-2xl font-bold mb-6" style="color: var(--inactive-text);">Practice</h2>
+
+    <!-- Tabs with Static Label -->
+    <div class="tabs-container inline-flex items-center max-w-[280px] mx-auto">
+      <!-- Static Label -->
+      <span class="static-label text-gray-800 font-semibold mr-4" style="color: var(--inactive-text);">Challenge:</span>
+      <button class="tab active px-4 py-2 rounded-l-lg" style="background-color: var(--primary-color); color: #fff;" data-tab="mini">
+        Mini
+      </button>
+      <button class="tab px-4 py-2 rounded-r-lg" style="background-color: var(--inactive-bg); color: var(--inactive-text);" data-tab="hard">
+        Hard
+      </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content max-w-[380px] mx-auto mt-6">
+      <!-- Mini Tab Content -->
+      <div class="tab-pane active" id="mini">
+        <div class="task-list flex justify-center flex-wrap gap-4">
+          <div class="task flex items-center gap-2 px-4 py-2 rounded-lg shadow" style="background-color: var(--task-bg-mini); color: var(--task-text);">
+            <span>&#8592;</span>
+            <span>Ngồi thiền 5p - 30 ngày</span>
+            <span>&#8594;</span>
+          </div>
+          <div class="task flex items-center gap-2 px-4 py-2 rounded-lg shadow" style="background-color: var(--task-bg-mini); color: var(--task-text);">
+            <span>&#8592;</span>
+            <span>Ăn với chánh niệm</span>
+            <span>&#8594;</span>
+          </div>
+          <div class="task flex items-center gap-2 px-4 py-2 rounded-lg shadow" style="background-color: var(--task-bg-mini); color: var(--task-text);">
+            <span>&#8592;</span>
+            <span>Giữ 5 giới</span>
+            <span>&#8594;</span>
+          </div>          
+          <div class="task flex items-center gap-2 px-4 py-2 rounded-lg shadow" style="background-color: var(--task-bg-mini); color: var(--task-text);">
+            <span>&#8592;</span>
+            <span>Giữ 10 giới</span>
+            <span>&#8594;</span>
+          </div>          
+          <div class="task flex items-center gap-2 px-4 py-2 rounded-lg shadow" style="background-color: var(--task-bg-mini); color: var(--task-text);">
+            <span>&#8592;</span>
+            <span>Không sân hận</span>
+            <span>&#8594;</span>
+          </div>          
+        </div>
+      </div>
+
+      <!-- Hard Tab Content -->
+      <div class="tab-pane hidden" id="hard">
+        <div class="task-list flex justify-center flex-wrap gap-4">
+          <div class="task flex items-center gap-2 px-4 py-2 rounded-lg shadow" style="background-color: var(--task-bg-hard); color: var(--task-text);">
+            <span>&#8592;</span>
+            <span>Task 1</span>
+            <span>&#8594;</span>
+          </div>
+          <div class="task flex items-center gap-2 px-4 py-2 rounded-lg shadow" style="background-color: var(--task-bg-hard); color: var(--task-text);">
+            <span>&#8592;</span>
+            <span>Task 2</span>
+            <span>&#8594;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="featured-posts" class="py-10">
+  <div class="container mx-auto px-4">
+    <!-- Tabs -->
+    <div class="tabs-container flex justify-center space-x-4 mb-6">
+      <button
+        class="tab active px-4 py-2 rounded-lg bg-primary-color text-white"
+        data-tab="newest"
+      >
+        Newest
+      </button>
+      <button
+        class="tab px-4 py-2 rounded-lg bg-secondary-bg text-gray-800"
+        data-tab="popular"
+      >
+        Popular
+      </button>
+      <button
+        class="tab px-4 py-2 rounded-lg bg-secondary-bg text-gray-800"
+        data-tab="comments"
+      >
+        Comments
+      </button>
+    </div>
+
+    <!-- Posts and Sidebar -->
+    <div class="flex flex-wrap lg:flex-nowrap gap-8">
+      <!-- Main Posts -->
+      <div class="main-posts w-full lg:w-2/3">
+        <!-- Tab Content -->
+        <div class="tab-content">
+          <!-- Newest Tab -->
+          <div class="tab-pane active" id="newest">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="post bg-white p-4 rounded-lg shadow">
+                <img
+                  src="/public/images/post-1.jpg"
+                  alt="Post Thumbnail"
+                  class="mb-4 rounded-lg"
+                />
+                <h3 class="text-lg font-semibold mb-2">Post Title 1</h3>
+                <p class="text-sm text-gray-500 mb-2">
+                  By Author Name on <span>01 Jan 2024</span>
+                </p>
+                <p class="text-gray-700 mb-4">
+                  This is a short description of the post content...
+                </p>
+                <a href="./post.html" class="text-primary-color hover:underline"
+                  >Read more</a
+                >
+              </div>
+              <div class="post bg-white p-4 rounded-lg shadow">
+                <img
+                  src="/public/images/post-2.jpg"
+                  alt="Post Thumbnail"
+                  class="mb-4 rounded-lg"
+                />
+                <h3 class="text-lg font-semibold mb-2">Post Title 2</h3>
+                <p class="text-sm text-gray-500 mb-2">
+                  By Author Name on <span>01 Jan 2024</span>
+                </p>
+                <p class="text-gray-700 mb-4">
+                  This is a short description of the post content...
+                </p>
+                <a href="./post.html" class="text-primary-color hover:underline"
+                  >Read more</a
+                >
+              </div>
+              <div class="post bg-white p-4 rounded-lg shadow">
+                <img
+                  src="/public/images/post-3.jpg"
+                  alt="Post Thumbnail"
+                  class="mb-4 rounded-lg"
+                />
+                <h3 class="text-lg font-semibold mb-2">Post Title 3</h3>
+                <p class="text-sm text-gray-500 mb-2">
+                  By Author Name on <span>01 Jan 2024</span>
+                </p>
+                <p class="text-gray-700 mb-4">
+                  This is a short description of the post content...
+                </p>
+                <a href="./post.html" class="text-primary-color hover:underline"
+                  >Read more</a
+                >
+              </div>
+              <div class="post bg-white p-4 rounded-lg shadow">
+                <img
+                  src="/public/images/post-4.jpg"
+                  alt="Post Thumbnail"
+                  class="mb-4 rounded-lg"
+                />
+                <h3 class="text-lg font-semibold mb-2">Post Title 4</h3>
+                <p class="text-sm text-gray-500 mb-2">
+                  By Author Name on <span>01 Jan 2024</span>
+                </p>
+                <p class="text-gray-700 mb-4">
+                  This is a short description of the post content...
+                </p>
+                <a href="./post.html" class="text-primary-color hover:underline"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination mt-6 text-center">
+            <button
+              class="px-3 py-1 border border-primary-color text-primary-color rounded-lg"
+            >
+              1
+            </button>
+            <button
+              class="px-3 py-1 border border-gray-300 text-gray-800 rounded-lg"
+            >
+              2
+            </button>
+            <button
+              class="px-3 py-1 border border-gray-300 text-gray-800 rounded-lg"
+            >
+              3
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Sidebar -->
+      <div class="recommend-sidebar w-full lg:w-1/3">
+        <h3 class="text-lg font-semibold mb-4">Recommended</h3>
+        <div class="recommended-post bg-white p-4 rounded-lg shadow mb-4">
+          <img
+            src="/public/images/post-5.webp"
+            alt="Post Thumbnail"
+            class="mb-4 rounded-lg"
+          />
+          <h4 class="text-md font-semibold mb-2">Recommended Post Title 1</h4>
+          <p class="text-sm text-gray-500 mb-2">
+            By Author Name on <span>01 Jan 2024</span>
+          </p>
+          <a href="#" class="text-primary-color hover:underline">Read more</a>
+        </div>
+        <div class="recommended-post bg-white p-4 rounded-lg shadow">
+          <img
+            src="/public/images/post-6.jpg"
+            alt="Post Thumbnail"
+            class="mb-4 rounded-lg"
+          />
+          <h4 class="text-md font-semibold mb-2">Recommended Post Title 2</h4>
+          <p class="text-sm text-gray-500 mb-2">
+            By Author Name on <span>01 Jan 2024</span>
+          </p>
+          <a href="#" class="text-primary-color hover:underline">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Subscribe Section -->
+<section id="subscribe-section" class="py-4 bg-secondary-bg">
+  <div class="container mx-auto px-4">
+    <!-- Subscribe Form -->
+    <div class="subscribe-box bg-white rounded-lg shadow-lg p-6">
+      <h4 class="text-lg font-semibold text-gray-800 mb-4 text-center">Subscribe to Receive New Posts</h4>
+      <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <input 
+          type="email" 
+          placeholder="Enter your email" 
+          class="border border-gray-300 rounded-lg px-4 py-2 w-full sm:w-96 focus:outline-none focus:ring-2 focus:ring-primary-color focus:border-transparent"
+        >
+        <button 
+          type="submit" 
+          class="button-primary  px-6 py-2 rounded-lg"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Social Links Section -->
+<section id="social-links-section" class="py-4">
+  <div class="container mx-auto px-4">
+    <!-- Social Links -->
+    <div class="social-box bg-white rounded-lg shadow-lg p-6">
+      <h4 class="text-lg font-semibold text-gray-800 mb-4 text-center">Join Our Community</h4>
+      <div class="social-links flex justify-center gap-6">
+        <!-- Facebook -->
+        <a href="#" class="flex items-center gap-2 text-primary-color hover:text-primary-color-hover">
+          <i class="fab fa-facebook-f"></i>
+          Nhóm Facebook
+        </a>
+        <!-- Twitter -->
+        <a href="#" class="flex items-center gap-2 text-primary-color hover:text-primary-color-hover">
+          <i class="fab fa-twitter"></i>
+          Follow Us on Twitter
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="flex items-center gap-2 text-primary-color hover:text-primary-color-hover">
+          <i class="fab fa-instagram"></i>
+          Instagram Page
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- <section class="hero-section">
+    <div class="container mx-auto py-10">
+      <h1 class="text-3xl font-bold">Welcome to the Website</h1>
+      <p class="mt-4">
+        This website uses root variables for colors. Change them in the root CSS and see the entire color scheme update.
+      </p>
+      <button class="button-primary px-4 py-2 rounded mt-4">Click Me</button>
+    </div>
+  </section> -->
+  <script type="text/javascript" defer src="/public/js/home.js"></script>
+</main>
+  <div id="theme-modal" class="fixed top-0 right-0 h-full w-full md:w-1/3 bg-white shadow-lg hidden z-50">
+    <div class="p-4">
+      <h2 class="text-lg font-bold text-gray-800 mb-2">Customize Theme Colors</h2>
+      <form id="theme-form" class="grid grid-cols-1 gap-2">
+        <!-- Menu Colors -->
+        <h3 class="text-small font-semibold text-gray-700 mb-1">Menu Levels</h3>
+        <div class="flex items-center justify-between">
+          <label for="menu-bg" class="text-sm text-gray-700 font-medium">Menu Background</label>
+          <input type="color" id="menu-bg" name="menu-bg" value="#6b4f4f" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="submenu-bg" class="text-sm text-gray-700 font-medium">Submenu Background</label>
+          <input type="color" id="submenu-bg" name="submenu-bg" value="#433f3f" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="subsubmenu-bg" class="text-sm text-gray-700 font-medium">Subsubmenu Background</label>
+          <input type="color" id="subsubmenu-bg" name="subsubmenu-bg" value="#2e2a2a" class="h-1 w-8 border rounded">
+        </div>
+  
+        <!-- Link Colors -->
+        <h3 class="text-small font-semibold text-gray-700 mb-1">Link Colors</h3>
+        <div class="flex items-center justify-between">
+          <label for="menu-link-color" class="text-sm text-gray-700 font-medium">Menu Link Color</label>
+          <input type="color" id="menu-link-color" name="menu-link-color" value="#ffffff" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="submenu-link-color" class="text-sm text-gray-700 font-medium">Submenu Link Color</label>
+          <input type="color" id="submenu-link-color" name="submenu-link-color" value="#d1d5db" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="subsubmenu-link-color" class="text-sm text-gray-700 font-medium">Subsubmenu Link Color</label>
+          <input type="color" id="subsubmenu-link-color" name="subsubmenu-link-color" value="#a3be8c" class="h-1 w-8 border rounded">
+        </div>
+  
+        <!-- Link Hover & Active Colors -->
+        <h3 class="text-small font-semibold text-gray-700 mb-1">Link Hover & Active States</h3>
+        <div class="flex items-center justify-between">
+          <label for="menu-link-hover-color" class="text-sm text-gray-700 font-medium">Menu Link Hover</label>
+          <input type="color" id="menu-link-hover-color" name="menu-link-hover-color" value="#a3be8c" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="menu-link-active-color" class="text-sm text-gray-700 font-medium">Active Link</label>
+          <input type="color" id="menu-link-active-color" name="menu-link-active-color" value="#065f46" class="h-1 w-8 border rounded">
+        </div>
+  
+        <!-- Primary Button -->
+        <h3 class="text-small font-semibold text-gray-700 mb-1">Primary Button</h3>
+        <div class="flex items-center justify-between">
+          <label for="primary-color" class="text-sm text-gray-700 font-medium">Button Color</label>
+          <input type="color" id="primary-color" name="primary-color" value="#a3be8c" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="primary-color-hover" class="text-sm text-gray-700 font-medium">Hover Color</label>
+          <input type="color" id="primary-color-hover" name="primary-color-hover" value="#8fbc8f" class="h-1 w-8 border rounded">
+        </div>
+  
+        <!-- Text and Body -->
+        <h3 class="text-small font-semibold text-gray-700 mb-1">Text and Body</h3>
+        <div class="flex items-center justify-between">
+          <label for="text-color" class="text-sm text-gray-700 font-medium">Text Color</label>
+          <input type="color" id="text-color" name="text-color" value="#4b4b4b" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="body-bg" class="text-sm text-gray-700 font-medium">Body Background</label>
+          <input type="color" id="body-bg" name="body-bg" value="#faf3e0" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+            <label for="secondary-bg" class="text-sm text-gray-700 font-medium">Secondary Background</label>
+            <input type="color" id="secondary-bg" name="secondary-bg" value="#f0e4d7" class="h-1 w-8 border rounded">
+          </div>        
+  
+        <!-- Footer -->
+        <h3 class="text-small font-semibold text-gray-700 mb-1">Footer</h3>
+        <div class="flex items-center justify-between">
+          <label for="footer-bg" class="text-sm text-gray-700 font-medium">Footer Background</label>
+          <input type="color" id="footer-bg" name="footer-bg" value="#433f3f" class="h-1 w-8 border rounded">
+        </div>
+        <div class="flex items-center justify-between">
+          <label for="footer-text-color" class="text-sm text-gray-700 font-medium">Footer Text Color</label>
+          <input type="color" id="footer-text-color" name="footer-text-color" value="#d9d9d9" class="h-1 w-8 border rounded">
+        </div>
+      </form>
+  
+      <!-- Modal Buttons -->
+      <div class="flex justify-end mt-4 space-x-2">
+        <button id="reset-theme" class="bg-gray-200 text-gray-800 px-3 py-1 text-sm rounded-lg hover:bg-gray-300">
+          Reset
+        </button>
+        <button id="cancel-theme" class="bg-gray-200 text-gray-800 px-3 py-1 text-sm rounded-lg hover:bg-gray-300">
+          Cancel
+        </button>
+        <button id="copy-theme" class="bg-blue-500 text-white px-3 py-1 text-sm rounded-lg hover:bg-blue-600">
+          Copy
+        </button>
+        <button id="save-theme" class="bg-primary-color text-white px-3 py-1 text-sm rounded-lg hover:bg-primary-color-hover">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", () => {
+  const themeVariables = [
+    "menu-bg",
+    "submenu-bg",
+    "subsubmenu-bg",
+    "menu-link-color",
+    "submenu-link-color",
+    "subsubmenu-link-color",
+    "menu-link-hover-color",
+    "submenu-link-hover-color",
+    "subsubmenu-link-hover-color",
+    "menu-link-active-color",
+    "primary-color",
+    "primary-color-hover",
+    "text-color",
+    "body-bg",
+    "secondary-bg",
+    "footer-bg",
+    "footer-text-color",
+  ];
+
+  const openModalButton = document.getElementById("open-theme-modal");
+  const themeModal = document.getElementById("theme-modal");
+  const themeForm = document.getElementById("theme-form");
+  const resetButton = document.getElementById("reset-theme");
+  const cancelButton = document.getElementById("cancel-theme");
+  const saveButton = document.getElementById("save-theme");
+  const copyButton = document.getElementById("copy-theme");
+
+  const originalTheme = {}; // Store original theme values
+  const previewTheme = {}; // Store previewed theme values
+
+  // Initialize originalTheme and previewTheme
+  themeVariables.forEach((variable) => {
+    const rootValue = getComputedStyle(document.documentElement).getPropertyValue(`--${variable}`).trim();
+    originalTheme[variable] = rootValue;
+    previewTheme[variable] = rootValue;
+
+    const input = document.getElementById(variable);
+    if (input) {
+      input.value = rootValue; // Set input value to match CSS variable
+    }
+  });
+
+  // Open Modal
+  openModalButton.addEventListener("click", () => {
+    themeModal.classList.remove("hidden");
+  });
+
+  // Close Modal
+  const closeModal = () => {
+    themeModal.classList.add("hidden");
+  };
+
+  // Preview Changes
+  themeForm.addEventListener("input", (e) => {
+    const { id, value } = e.target;
+    if (themeVariables.includes(id)) {
+      document.documentElement.style.setProperty(`--${id}`, value); // Update CSS variable dynamically
+      previewTheme[id] = value; // Save to preview state
+    }
+  });
+
+  // Reset to Default Values
+  resetButton.addEventListener("click", () => {
+    themeVariables.forEach((variable) => {
+      const defaultValue = originalTheme[variable];
+      document.documentElement.style.setProperty(`--${variable}`, defaultValue); // Reset CSS variable
+      const input = document.getElementById(variable);
+      if (input) {
+        input.value = defaultValue; // Reset input field
+      }
+      previewTheme[variable] = defaultValue; // Reset preview state
+    });
+  });
+
+  // Cancel Changes
+  cancelButton.addEventListener("click", () => {
+    themeVariables.forEach((variable) => {
+      const originalValue = originalTheme[variable];
+      document.documentElement.style.setProperty(`--${variable}`, originalValue); // Revert CSS variable
+      const input = document.getElementById(variable);
+      if (input) {
+        input.value = originalValue; // Revert input field
+      }
+    });
+    closeModal(); // Close modal
+  });
+
+  // Save Changes
+  saveButton.addEventListener("click", () => {
+    Object.assign(originalTheme, previewTheme); // Commit previewed changes
+    alert("Theme updated successfully!");
+    closeModal();
+  });
+
+  // Copy Color Set
+  copyButton.addEventListener("click", () => {
+    const colorSetCSS = themeVariables
+      .map((variable) => {
+        const value = getComputedStyle(document.documentElement).getPropertyValue(`--${variable}`).trim();
+        return `  --${variable}: ${value};`;
+      })
+      .join("\n");
+    const formattedCSS = `/* Zen Color Set */\n:root {\n${colorSetCSS}\n}`;
+    navigator.clipboard.writeText(formattedCSS).then(() => {
+      alert("Color set copied to clipboard!");
+    }).catch((err) => {
+      console.error("Failed to copy color set: ", err);
+      alert("Failed to copy color set. Please try again.");
+    });
+  });
+});
+
+
+
+
+</script>
+
+<style type="text/css">
+/* Modal Background */
+#theme-modal {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 1000;
+  /* max-width: 300px; */
+  flex-flow: row-reverse;
+  overflow: scroll;
+}
+
+/* Modal Content */
+#theme-modal .bg-white {
+  max-width: 600px;
+  width: 90%;
+  overflow: hidden;
+}
+
+/* Modal Buttons */
+#theme-modal button {
+  transition: background-color 0.2s ease;
+}
+
+/* Align label and input on the same line */
+/* Adjust form layout */
+#theme-form .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Compact the color picker size */
+#theme-form input[type="color"] {
+  width: 4rem; /* Adjust width */
+  height: 2rem; /* Adjust height */
+  border-radius: 0.25rem;
+}
+
+/* Smaller labels and spacing */
+#theme-form label {
+  font-size: 0.875rem; /* Smaller font */
+}
+
+/* Modal buttons */
+#theme-modal button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem; /* Small text size */
+}
+
+
+/* Reduce the width of the color picker to save space */
+#theme-form input[type="color"] {
+  width: 4rem; /* Adjust as needed */
+  border-radius: 0.25rem;
+}
+
+
+</style>
+
+  <footer class="py-4 text-center">
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
