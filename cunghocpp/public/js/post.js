@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tocList = document.getElementById("toc-list");
   const tocWrapper = document.querySelector(".toc-wrapper");
   const tocToggle = document.getElementById("toc-toggle");
-  const postContent = document.getElementById("post-content");
+  const postContent = document.querySelector(".content-details");
 
   // Generate TOC dynamically
   const headings = postContent.querySelectorAll("h1, h2, h3, h4, h5, h6");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Initialize TOC display state
-  let isTocVisible = true; // Assume TOC is visible by default
+  // let isTocVisible = true; // Assume TOC is visible by default
 
   // Enable smooth scrolling on TOC click
   tocList.addEventListener("click", (e) => {
@@ -43,14 +43,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // TOC toggle functionality
   tocToggle.addEventListener("click", () => {
+    // mobile: toggle sm:hidden
+    // desktop : toggle hidden
+    const isTocVisible = tocList.style.display != "none";
+    tocList.classList.toggle("hidden");
     if (isTocVisible) {
-      tocWrapper.style.display = "none"; // Hide TOC
       tocToggle.innerHTML = `<i class="fa-solid fa-list"></i>`;
     } else {
-      tocWrapper.style.display = "block"; // Show TOC
       tocToggle.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
     }
-    isTocVisible = !isTocVisible; // Toggle state
+    // if (isTocVisible) {
+    //   // hide TOC
+    //   tocToggle.innerHTML = `<i class="fa-solid fa-list"></i>`;
+    // } else {
+    //   tocList.style.display = "block"; // Show TOC
+    //   tocToggle.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+    // }
+    // isTocVisible = !isTocVisible; // Toggle state
   });
 
   // Highlight active TOC item on scroll
